@@ -28,7 +28,7 @@ while condition:
         check_num = user_input[10]
         p_of_b = user_input[7:10]
         # Get gender of ID owner
-        if int(gender_num) % 2 ==0:
+        if int(gender_num) % 2 == 0:
             gender_id = 'Female'
         else:
             gender_id = 'Male'
