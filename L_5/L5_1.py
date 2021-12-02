@@ -1,34 +1,34 @@
-# id_code = input('Please enter your ID: ')   # ДОМАШКА
-# # id_code = '38803160272'
-#
-# chk1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 1]
-# chk2 = [3, 4, 5, 6, 7, 8, 9, 1, 2, 3]
-#
-# cnt = 0
-# result = 0
-# for num in chk1:
-#     result += num * int(id_code[cnt])
-#     cnt += 1
-# check_num = result % 11
-#
-# if int(id_code[-1]) == check_num:
-#     print(f'Your ID is {id_code}')
-#     print('ID is valid')
-# elif check_num == 10:
-#     cnt = 0
-#     result = 0
-#     for num in chk2:
-#         result += num * int(id_code[cnt])
-#         cnt += 1
-#     check_num = result % 11
-#     if check_num == int(id_code[-1]):
-#         print(f'Your ID is {id_code}')
-#         print('ID is valid')
-#     else:
-#         print('Your ID is invalid')
-# else:
-#     print('Your ID is invalid')
-#
+id_code = input('Please enter your ID: ')   # ДОМАШКА
+# id_code = '38803160272'
+
+chk1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 1]
+chk2 = [3, 4, 5, 6, 7, 8, 9, 1, 2, 3]
+
+cnt = 0
+result = 0
+for num in chk1:
+    result += num * int(id_code[cnt])
+    cnt += 1
+check_num = result % 11
+
+if int(id_code[-1]) == check_num:
+    print(f'Your ID is {id_code}')
+    print('ID is valid')
+elif check_num == 10:
+    cnt = 0
+    result = 0
+    for num in chk2:
+        result += num * int(id_code[cnt])
+        cnt += 1
+    check_num = result % 11
+    if check_num == int(id_code[-1]):
+        print(f'Your ID is {id_code}')
+        print('ID is valid')
+    else:
+        print('Your ID is invalid')
+else:
+    print('Your ID is invalid')
+
     # """""""""""""""""""""""""""""""""""""""""""
 #
 # condition = True
@@ -103,6 +103,30 @@ while condition:
             region = 'Tartu Ülikooli Naistekliinik'
         elif int(birth_region) in range(21, 151):
             region = 'Ida-Tallinna keskhaigla, Pelgulinna sünnitusmaja (Tallinn)'
+        elif int(birth_region) in range(151, 161):
+            region = 'Keila haigla'
+        elif int(birth_region) in range(161, 221):
+            region = 'Rapla haigla, Loksa haigla, Hiiumaa haigla (Kärdla)'
+        elif int(birth_region) in range(221, 271):
+            region = 'Ida-Viru keskhaigla (Kohtla-Järve, endine Jõhvi)'
+        elif int(birth_region) in range(271, 371):
+            region = 'Maarjamõisa kliinikum (Tartu), Jõgeva haigla'
+        elif int(birth_region) in range(371, 421):
+            region = 'Narva haigla'
+        elif int(birth_region) in range(421, 471):
+            region = 'Pärnu haigla'
+        elif int(birth_region) in range(471, 491):
+            region = 'Haapsalu haigla'
+        elif int(birth_region) in range(491, 521):
+            region = 'Järvamaa haigla (Paide)'
+        elif int(birth_region) in range(521, 571):
+            region = ' Rakvere haigla, Tapa haigla'
+        elif int(birth_region) in range(571, 601):
+            region = 'Valga haigla'
+        elif int(birth_region) in range(601, 651):
+            region = 'Viljandi haigla'
+        elif int(birth_region) in range(651, 701):
+            region = 'Lõuna-Eesti haigla (Võru), Põlva haigla'
 
         print(f'ID : {user_input}')
         print(f'Gender: {gender_id}')
