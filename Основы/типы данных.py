@@ -17,4 +17,4 @@ print(type(a))
 a = {'a': 1, 'b': 2}    #<class 'dict'>
 print(type(a))
 a = True            # <class 'bool'>
-print(type(a))
+print(type(a)
