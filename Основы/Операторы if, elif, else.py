@@ -5,3 +5,15 @@ elif Faslse:                    # if true срабатывает if, if False с
     print('elif')
 else:
     print('else')
+
+False
+True
+None
+and
+with/as
+assert
+break
+elif
+else
+except
+fina
